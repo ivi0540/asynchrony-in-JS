@@ -24,6 +24,7 @@ function testTryCatch() {
 
 
 function testPromise() {
+    // Промис - это инструмент который позволяет приистановливать некоторый код и дожидаца его выпления или фейла
     let promise = new Promise(function (resolve, reject) {
         setTimeout(function () {
             let isError = false;
@@ -70,6 +71,8 @@ function testArrPromises() {
     Promise.race(promises).then((result) => {
         console.log(result);
     });
+
+    // Можно отслежывать состояние промисов они могут быть выполены не выполнены и в ожидании
 }
 
 // testTryCatch();
